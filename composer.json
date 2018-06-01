@@ -1,5 +1,5 @@
 {
-    "name": "guillermoandrae/php-repository-library",
+    "name": "guillermoandrae/php-repository",
     "type": "library",
     "license": "MIT",
     "require": {
