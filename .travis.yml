@@ -11,7 +11,3 @@ install:
   - composer install --no-interaction --prefer-source
 script:
   - composer test
-env:
-  global:
-    - APP_ENV=test
-    - APP_DEBUG=true
