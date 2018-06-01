@@ -1,7 +1,7 @@
 # PHP Repository Library
 [![Travis](https://img.shields.io/travis/guillermoandrae/php-repository-library.svg?style=flat-square)](https://travis-ci.org/guillermoandrae/php-repository-library) [![Scrutinizer](https://img.shields.io/scrutinizer/g/guillermoandrae/php-repository-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/guillermoandrae/php-repository-library/) [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/coverage/g/guillermoandrae/php-repository-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/guillermoandrae/php-repository-library/) [![approval](https://img.shields.io/badge/approved%20by-your%20mom-green.svg?style=flat-square)](https://guillermoandraefisher.com)
 
-I use the Repository pattern. Often. And if you're a fan of Laravel (like me), you're probably a fan of [Collections](https://laravel.com/docs/5.6/collections). This library includes simple implementations of both.
+I use a simple implementation of the Repository pattern, and I also use a pared-down version of [Collections](https://laravel.com/docs/5.6/collections). Often. I've been copying and pasting the same code between projects for longer than I care to admit; I came to my senses recently, and that's why this project now exists.
 
 ## Installation
 Do this, then relax:
