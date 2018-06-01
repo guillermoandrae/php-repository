@@ -4,6 +4,10 @@ filter:
         - 'src/helpers.php'
 before_commands:
     - 'composer install --prefer-source'
+checks:
+    php:
+        code_rating: true
+        duplication: true
 tools:
     php_analyzer: true
     php_mess_detector: true
