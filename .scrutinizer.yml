@@ -1,0 +1,20 @@
+filter:
+    excluded_paths:
+        - 'vendor/*'
+        - 'src/helpers.php'
+before_commands:
+    - 'composer install --prefer-source'
+tools:
+    php_analyzer: true
+    php_mess_detector: true
+    sensiolabs_security_checker: true
+    php_loc:
+        excluded_dirs:
+            - vendor
+    php_pdepend: true
+    php_sim: true
+build_failure_conditions:
+    - 'elements.rating(< B).new.exists'
+    - 'issues.label("coding-style").new.exists'
+    - 'issues.severity(>= MAJOR).new.exists'
+    - 'project.metric("scrutinizer.quality", < 6)'

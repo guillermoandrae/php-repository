@@ -1,0 +1,4 @@
+/reports/
+/vendor/
+clover.xml
+coveralls-upload.json
