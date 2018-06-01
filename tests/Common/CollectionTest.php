@@ -105,21 +105,6 @@ class CollectionTest extends TestCase
         $this->assertSame([4, 5, 6], $mappedCollection->all());
     }
 
-    public function testOffsetSetAndOffsetGet()
-    {
-        $collection = new Collection([1]);
-        $collection->offsetSet(1, 2);
-        $this->assertSame(2, $collection->offsetGet(1));
-    }
-
-    public function testGetIterator()
-    {
-        $this->assertEquals(
-            new \ArrayIterator($this->items),
-            $this->collection->getIterator()
-        );
-    }
-
     public function testToArray()
     {
         $this->assertSame($this->items, $this->collection->toArray());

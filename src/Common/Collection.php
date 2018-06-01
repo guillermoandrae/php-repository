@@ -4,17 +4,7 @@ namespace App\Common;
 
 final class Collection implements CollectionInterface
 {
-    use JsonableTrait;
-
-    /**
-     * @var array
-     */
-    private $items;
-
-    public function __construct(array $items = [])
-    {
-        $this->items = $items;
-    }
+    use AggregateTrait, JsonableTrait;
 
     public function all(): array
     {
@@ -84,31 +74,6 @@ final class Collection implements CollectionInterface
     public function map(callable $callback): CollectionInterface
     {
         return new static(array_map($callback, $this->items));
-    }
-
-    public function offsetExists($key)
-    {
-        return array_key_exists($key, $this->items);
-    }
-
-    public function offsetGet($key)
-    {
-        return $this->items[$key];
-    }
-
-    public function offsetSet($key, $value)
-    {
-        $this->items[$key] = $value;
-    }
-
-    public function offsetUnset($key)
-    {
-        unset($this->items[$key]);
-    }
-
-    public function getIterator()
-    {
-        return new \ArrayIterator($this->items);
     }
 
     public function toArray(): array

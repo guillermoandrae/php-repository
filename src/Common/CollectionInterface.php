@@ -5,13 +5,6 @@ namespace App\Common;
 interface CollectionInterface extends \ArrayAccess, \IteratorAggregate, ArrayableInterface
 {
     /**
-     * Builds the Collection object.
-     *
-     * @param array $items  The array of items used to build the collection.
-     */
-    public function __construct(array $items = []);
-
-    /**
      * Returns all items in the collection.
      *
      * @return array
