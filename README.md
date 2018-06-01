@@ -1,1 +1,2 @@
-# php-repository-library
+# PHP Repository Library
+[![Travis](https://img.shields.io/travis/guillermoandrae/php-repository-library.svg?style=flat-square)](https://travis-ci.org/guillermoandrae/php-repository-library) [![Coveralls](https://img.shields.io/coveralls/guillermoandrae/php-repository-library.svg?style=flat-square)](https://coveralls.io/github/guillermoandrae/php-repository-library) [![approval](https://img.shields.io/badge/approved%20by-your%20mom-green.svg?style=flat-square)](https://guillermoandraefisher.com)
