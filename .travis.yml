@@ -12,4 +12,5 @@ install:
 script:
   - composer test
 after_success:
-  - travis_retry php vendor/bin/php-coveralls -v
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover clover.xml
