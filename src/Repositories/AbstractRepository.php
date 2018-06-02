@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace Guillermoandrae\Repositories;
 
-use App\Models\ModelInterface;
+use Guillermoandrae\Models\ModelInterface;
 
 abstract class AbstractRepository implements RepositoryInterface
 {

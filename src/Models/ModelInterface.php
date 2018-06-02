@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Guillermoandrae\Models;
 
-use App\Common\ArrayableInterface;
+use Guillermoandrae\Common\ArrayableInterface;
 
 interface ModelInterface extends ArrayableInterface
 {

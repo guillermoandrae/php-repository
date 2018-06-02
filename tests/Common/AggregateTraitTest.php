@@ -2,7 +2,7 @@
 
 namespace Test\Common;
 
-use App\Common\AggregateTrait;
+use Guillermoandrae\Common\AggregateTrait;
 use PHPUnit\Framework\TestCase;
 
 class AggregateTraitTest extends TestCase

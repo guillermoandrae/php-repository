@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories;
+namespace Guillermoandrae\Repositories;
 
 class RepositoryFactory
 {

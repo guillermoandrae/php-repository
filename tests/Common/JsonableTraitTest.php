@@ -2,7 +2,7 @@
 
 namespace Test\Common;
 
-use App\Common\JsonableTrait;
+use Guillermoandrae\Common\JsonableTrait;
 use PHPUnit\Framework\TestCase;
 
 class JsonableTraitTest extends TestCase

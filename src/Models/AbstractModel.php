@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Guillermoandrae\Models;
 
-use App\Common\JsonableTrait;
+use Guillermoandrae\Common\JsonableTrait;
 
 abstract class AbstractModel implements ModelInterface
 {

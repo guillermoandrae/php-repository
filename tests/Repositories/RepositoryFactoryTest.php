@@ -2,8 +2,8 @@
 
 namespace Test\Repositories;
 
-use App\Repositories\AbstractRepository;
-use App\Repositories\RepositoryFactory;
+use Guillermoandrae\Repositories\AbstractRepository;
+use Guillermoandrae\Repositories\RepositoryFactory;
 use PHPUnit\Framework\TestCase;
 
 class RepositoryFactoryTest extends TestCase
@@ -37,7 +37,7 @@ class RepositoryFactoryTest extends TestCase
             [$options],
             $className
         );
-        class_alias($className, sprintf('App\Repositories\%s', $className));
+        class_alias($className, sprintf('Guillermoandrae\Repositories\%s', $className));
         return $repository;
     }
 }

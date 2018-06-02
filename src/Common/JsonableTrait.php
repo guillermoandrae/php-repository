@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common;
+namespace Guillermoandrae\Common;
 
 trait JsonableTrait
 {

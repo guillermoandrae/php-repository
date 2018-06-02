@@ -9,7 +9,7 @@
     "autoload": {
         "files": ["src/helpers.php"],
         "psr-4": {
-            "App\\": "src/"
+            "Guillermoandrae\\": "src/"
         }
     },
     "require-dev": {
@@ -23,8 +23,8 @@
     },
     "scripts": {
         "check-style": [
-            "phpcbf --standard=PSR2 --extensions=php src",
-            "phpcs --standard=PSR2 --extensions=php src"
+            "phpcbf --standard=PSR2 --extensions=php src tests",
+            "phpcs --standard=PSR2 --extensions=php src tests"
         ],
         "check-coverage": [
             "phpunit --coverage-text --coverage-clover=./clover.xml"

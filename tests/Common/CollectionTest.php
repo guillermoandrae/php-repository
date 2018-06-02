@@ -2,8 +2,8 @@
 
 namespace Test\Common;
 
-use App\Common\Collection;
-use App\Common\CollectionInterface;
+use Guillermoandrae\Common\Collection;
+use Guillermoandrae\Common\CollectionInterface;
 use PHPUnit\Framework\TestCase;
 
 class CollectionTest extends TestCase
@@ -90,7 +90,7 @@ class CollectionTest extends TestCase
     public function testFilter()
     {
         $collection = new Collection([1, 2, 3]);
-        $filteredCollection = $collection->filter(function ($var){
+        $filteredCollection = $collection->filter(function ($var) {
             return($var & 1);
         });
         $this->assertCount(2, $filteredCollection);
@@ -99,10 +99,10 @@ class CollectionTest extends TestCase
     public function testMap()
     {
         $collection = new Collection([1, 2, 3]);
-        $mappedCollection = $collection->map(function ($var){
+        $mGuillermoandraeedCollection = $collection->map(function ($var) {
             return($var + 3);
         });
-        $this->assertSame([4, 5, 6], $mappedCollection->all());
+        $this->assertSame([4, 5, 6], $mGuillermoandraeedCollection->all());
     }
 
     public function testToArray()

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62b979db4f7787a21f1c470f2d572968",
+    "content-hash": "2f225c15d357a50839bf0d49dde63855",
     "packages": [
         {
             "name": "icanboogie/inflector",

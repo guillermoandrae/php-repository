@@ -2,10 +2,10 @@
 
 namespace Test\Repositories;
 
-use App\Common\Collection;
-use App\Models\AbstractModel;
-use App\Repositories\AbstractRepository;
-use App\Repositories\RepositoryInterface;
+use Guillermoandrae\Common\Collection;
+use Guillermoandrae\Models\AbstractModel;
+use Guillermoandrae\Repositories\AbstractRepository;
+use Guillermoandrae\Repositories\RepositoryInterface;
 use PHPUnit\Framework\TestCase;
 
 class RepositoryTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common;
+namespace Guillermoandrae\Common;
 
 interface CollectionInterface extends \ArrayAccess, \IteratorAggregate, ArrayableInterface
 {
@@ -91,10 +91,10 @@ interface CollectionInterface extends \ArrayAccess, \IteratorAggregate, Arrayabl
     public function filter(callable $callback): CollectionInterface;
 
     /**
-     * Returns a collection wherein the provided callback has been applied to
+     * Returns a collection wherein the provided callback has been Guillermoandraelied to
      * all items.
      *
-     * @param callable $callback  The callback to apply to all items.
+     * @param callable $callback  The callback to Guillermoandraely to all items.
      * @return CollectionInterface
      */
     public function map(callable $callback): CollectionInterface;

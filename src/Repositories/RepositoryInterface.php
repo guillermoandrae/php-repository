@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repositories;
+namespace Guillermoandrae\Repositories;
 
-use App\Common\CollectionInterface;
-use App\Models\ModelInterface;
+use Guillermoandrae\Common\CollectionInterface;
+use Guillermoandrae\Models\ModelInterface;
 
 interface RepositoryInterface
 {
