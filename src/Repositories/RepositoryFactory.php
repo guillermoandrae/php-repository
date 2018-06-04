@@ -35,7 +35,7 @@ final class RepositoryFactory
      */
     public static function getNamespace(): string
     {
-        if (is_null(self::$namespace)) {
+        if (!self::$namespace) {
             self::$namespace = self::$defaultNamespace;
         }
         return self::$namespace;

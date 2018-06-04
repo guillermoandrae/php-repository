@@ -23,6 +23,9 @@ class RepositoryFactoryTest extends TestCase
         $this->assertEquals($expectedRepository, $actualRepository);
     }
 
+    /**
+     * @runInSeparateProcess
+     */
     public function testFactoryWithNamespace()
     {
         $namespace = 'MyApp';
