@@ -21,7 +21,7 @@ final class RepositoryFactory
     /**
      * Sets the namespace to use when creating repository objects.
      *
-     * @param string $namespace The repositories namespace.
+     * @param string $namespace The namespace for repositories.
      */
     public static function setNamespace(string $namespace)
     {
@@ -36,7 +36,7 @@ final class RepositoryFactory
     public static function getNamespace(): string
     {
         if (is_null(static::$namespace)) {
-            return static::$defaultNamespace;
+            static::$namespace = static::$defaultNamespace;
         }
         return static::$namespace;
     }
