@@ -2,8 +2,45 @@
 
 namespace Guillermoandrae\Repositories;
 
-class RepositoryFactory
+final class RepositoryFactory
 {
+    /**
+     * The namespace to use when creating repository objects.
+     *
+     * @var string
+     */
+    private static $namespace;
+
+    /**
+     * The default namespace to use when creating repository objects.
+     *
+     * @var string
+     */
+    private static $defaultNamespace = 'App\Repositories';
+
+    /**
+     * Sets the namespace to use when creating repository objects.
+     *
+     * @param string $namespace The repositories namespace.
+     */
+    public static function setNamespace(string $namespace)
+    {
+        static::$namespace = $namespace;
+    }
+
+    /**
+     * Returns the namespace to use when creating repository objects.
+     *
+     * @return string
+     */
+    public static function getNamespace(): string
+    {
+        if (is_null(static::$namespace)) {
+            return static::$defaultNamespace;
+        }
+        return static::$namespace;
+    }
+
     /**
      * Returns the desired repository using the provided data.
      *
@@ -18,7 +55,7 @@ class RepositoryFactory
         try {
             $className = sprintf(
                 '%s\%sRepository',
-                __NAMESPACE__,
+                static::getNamespace(),
                 ucfirst(strtolower($name))
             );
             $reflectionClass = new \ReflectionClass($className);

@@ -1,9 +1,8 @@
 filter:
     excluded_paths:
         - 'vendor/*'
-        - 'src/helpers.php'
 before_commands:
-    - 'composer install --prefer-source'
+    - 'composer install --no-interaction --prefer-source'
 tools:
     external_code_coverage: true
 build:

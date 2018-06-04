@@ -4,10 +4,11 @@
     "license": "MIT",
     "require": {
         "php": "^7.1",
-        "icanboogie/inflector": "^1.4"
+        "icanboogie/inflector": "^1.4",
+        "guillermoandrae/php-debug": "^0.1.0",
+        "guillermoandrae/php-collection": "^0.1.0"
     },
     "autoload": {
-        "files": ["src/helpers.php"],
         "psr-4": {
             "Guillermoandrae\\": "src/"
         }

@@ -4,8 +4,95 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f225c15d357a50839bf0d49dde63855",
+    "content-hash": "aa53d6d56bd4b4f10e440b785f5307f0",
     "packages": [
+        {
+            "name": "guillermoandrae/php-collection",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guillermoandrae/php-collection.git",
+                "reference": "4b665cfda2541369e12717414794faf159cedd6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guillermoandrae/php-collection/zipball/4b665cfda2541369e12717414794faf159cedd6c",
+                "reference": "4b665cfda2541369e12717414794faf159cedd6c",
+                "shasum": ""
+            },
+            "require": {
+                "guillermoandrae/php-debug": "^0.1.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Guillermoandrae\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillermo A. Fisher",
+                    "email": "me@guillermoandraefisher.com"
+                }
+            ],
+            "description": " PHP Collection Library",
+            "time": "2018-06-04T16:53:54+00:00"
+        },
+        {
+            "name": "guillermoandrae/php-debug",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guillermoandrae/php-debug.git",
+                "reference": "0099f4bc8091f760203478e102db6316eb48a4c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guillermoandrae/php-debug/zipball/0099f4bc8091f760203478e102db6316eb48a4c8",
+                "reference": "0099f4bc8091f760203478e102db6316eb48a4c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Guillermoandrae\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillermo A. Fisher",
+                    "email": "me@guillermoandraefisher.com"
+                }
+            ],
+            "description": "PHP Debug library",
+            "time": "2018-06-04T02:32:48+00:00"
+        },
         {
             "name": "icanboogie/inflector",
             "version": "v1.4.4",
@@ -730,16 +817,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.2.2",
+            "version": "7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3cf0836680bf5c365c627e8566d46c9e1f544db9"
+                "reference": "42bb8f5b2cb36483907a20f45e4cd1665c24d8a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3cf0836680bf5c365c627e8566d46c9e1f544db9",
-                "reference": "3cf0836680bf5c365c627e8566d46c9e1f544db9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/42bb8f5b2cb36483907a20f45e4cd1665c24d8a7",
+                "reference": "42bb8f5b2cb36483907a20f45e4cd1665c24d8a7",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +897,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-01T07:54:27+00:00"
+            "time": "2018-06-03T06:05:05+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

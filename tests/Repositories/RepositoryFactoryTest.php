@@ -23,13 +23,22 @@ class RepositoryFactoryTest extends TestCase
         $this->assertEquals($expectedRepository, $actualRepository);
     }
 
+    public function testFactoryWithNamespace()
+    {
+        $namespace = 'MyApp';
+        RepositoryFactory::setNamespace($namespace);
+        $expectedRepository = $this->getRepository('test1', null, $namespace);
+        $actualRepository = RepositoryFactory::factory('test1');
+        $this->assertEquals($expectedRepository, $actualRepository);
+    }
+
     public function testInvalidFactory()
     {
         $this->expectExceptionMessage('The guillermo repository does not exist');
         RepositoryFactory::factory('guillermo');
     }
 
-    private function getRepository($alias, $options = null)
+    private function getRepository(string $alias, $options = null, string $namespace = 'App\Repositories')
     {
         $className = ucfirst($alias) . 'Repository';
         $repository = $this->getMockForAbstractClass(
@@ -37,7 +46,7 @@ class RepositoryFactoryTest extends TestCase
             [$options],
             $className
         );
-        class_alias($className, sprintf('Guillermoandrae\Repositories\%s', $className));
+        class_alias($className, sprintf('%s\%s', $namespace, $className));
         return $repository;
     }
 }
