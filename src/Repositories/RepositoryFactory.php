@@ -25,7 +25,7 @@ final class RepositoryFactory
      */
     public static function setNamespace(string $namespace)
     {
-        static::$namespace = $namespace;
+        self::$namespace = $namespace;
     }
 
     /**
@@ -35,10 +35,10 @@ final class RepositoryFactory
      */
     public static function getNamespace(): string
     {
-        if (is_null(static::$namespace)) {
-            static::$namespace = static::$defaultNamespace;
+        if (is_null(self::$namespace)) {
+            self::$namespace = self::$defaultNamespace;
         }
-        return static::$namespace;
+        return self::$namespace;
     }
 
     /**
@@ -55,7 +55,7 @@ final class RepositoryFactory
         try {
             $className = sprintf(
                 '%s\%sRepository',
-                static::getNamespace(),
+                self::getNamespace(),
                 ucfirst(strtolower($name))
             );
             $reflectionClass = new \ReflectionClass($className);
