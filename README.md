@@ -10,16 +10,23 @@ composer require guillermoandrae/php-repository
 ```
 
 ## Usage
-Before you do anything crazy, [read up on the Repository pattern](https://martinfowler.com/eaaCatalog/repository.html). If you've decided you still want to move forward, keep reading.
+Before you do anything crazy, [read up on the Repository pattern](https://martinfowler.com/eaaCatalog/repository.html). If, after reading that,  you decide you still want to move forward: keep reading.
 
 ### Naming Classes
 Your classes should be named according to their data type. For example, if you're dealing with widgets, your repository should be named `WidgetsRepository` and your model should be named `WidgetModel`. Note that the data type in the repository name is pluralized and singular in the model name. 
+
+### Define the Namespace
+By default, the `RepositoryFactory` class will look for repositories in the  `App\Repositories` namespace. If you don't plan on using that namespace, you'll need to tell the factory where your repositories live. Use `RepositoryFactory::setNamespace()` to do that, like so:
+
+```php
+RepositoryFactory::setNamespace('MyStuff\Repositories');
+```
 
 ### Creating Repositories
 Leveraging the repository functionality is as easy as writing the following:
 
 ```php
-namespace App\Repositories;
+namespace App\Repositories; // again, use whatever you like
 
 use Guillermoandrae\Repositories\AbstractRepository;
 
@@ -41,13 +48,13 @@ namespace App\Repositories;
 
 use Guillermoandrae\Models\AbstractModel;
 
-final class WidgetModel extends AbstractModel
+final class WidgetModel extends AbstractModel // the "final" is optional
 {
     // add your constructor and getters
 }
 ```
 
-I like to build immutable models, but how you use them is really up to you.
+I generally build immutable models, but how you use them is entirely up to you.
 
 ## Testing
 Run the following command to make sure you don't ruin the code coverage percentage:
