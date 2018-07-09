@@ -10,19 +10,19 @@ trait ReadOnlyRepositoryTrait
     final public function create(array $options): ModelInterface
     {
         unset($options);
-        return $this->raiseBadMethodCallException('create');
+        return $this->callUnsupportedMethod('create');
     }
 
     final public function update($id, array $options): ModelInterface
     {
         unset($id, $options);
-        return $this->raiseBadMethodCallException('update');
+        return $this->callUnsupportedMethod('update');
     }
 
     final public function delete($id): bool
     {
         unset($id);
-        return $this->raiseBadMethodCallException('delete');
+        return $this->callUnsupportedMethod('delete');
     }
 
     /**
@@ -30,10 +30,10 @@ trait ReadOnlyRepositoryTrait
      *
      * @param string $method The name of the unsupported method.
      */
-    protected function raiseBadMethodCallException(string $method)
+    protected function callUnsupportedMethod(string $method)
     {
         throw new BadMethodCallException(
-            sprintf('The %s method of this repository is not supported.', $method)
+            sprintf('The %s method of this read-only repository is not supported.', $method)
         );
     }
 }
