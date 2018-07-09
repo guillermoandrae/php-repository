@@ -28,11 +28,18 @@
             "phpcs --standard=PSR2 --extensions=php src tests"
         ],
         "check-coverage": [
+            "phpunit --coverage-text --coverage-html=reports"
+        ],
+        "check-coverage-clover": [
             "phpunit --coverage-text --coverage-clover=./clover.xml"
         ],
         "test": [
             "@check-style",
             "@check-coverage"
+        ],
+        "build": [
+            "@check-style",
+            "@check-coverage-clover"
         ]
     }
 }
