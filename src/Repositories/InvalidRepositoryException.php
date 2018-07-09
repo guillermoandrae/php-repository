@@ -2,8 +2,8 @@
 
 namespace Guillermoandrae\Repositories;
 
-use ErrorException;
+use RuntimeException;
 
-class InvalidRepositoryException extends ErrorException
+class InvalidRepositoryException extends RuntimeException
 {
 }
