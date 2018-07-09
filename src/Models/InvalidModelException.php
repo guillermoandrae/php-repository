@@ -1,6 +1,6 @@
 <?php
 
-namespace Guillermoandrae\Repositories;
+namespace Guillermoandrae\Models;
 
 class InvalidModelException extends \ErrorException
 {
