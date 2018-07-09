@@ -14,19 +14,19 @@ class ReadOnlyRepositoryTraitTest extends TestCase
 
     public function testCreate()
     {
-        $this->expectExceptionMessage('The create method of this read-only repository is not supported');
+        $this->expectExceptionMessage('The create method of this repository is not supported');
         $this->repository->create([]);
     }
 
     public function testUpdate()
     {
-        $this->expectExceptionMessage('The update method of this read-only repository is not supported');
+        $this->expectExceptionMessage('The update method of this repository is not supported');
         $this->repository->update('test', []);
     }
 
     public function testDelete()
     {
-        $this->expectExceptionMessage('The delete method of this read-only repository is not supported');
+        $this->expectExceptionMessage('The delete method of this repository is not supported');
         $this->repository->delete('test');
     }
 
