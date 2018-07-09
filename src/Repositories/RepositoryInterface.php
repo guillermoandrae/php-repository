@@ -8,6 +8,13 @@ use Guillermoandrae\Models\ModelInterface;
 interface RepositoryInterface
 {
     /**
+     * @see RepositoryInterface::findById()
+     * @param mixed $id  The ID of the desired model.
+     * @return ModelInterface
+     */
+    public function find($id): ModelInterface;
+
+    /**
      * Returns the model with the provided ID.
      *
      * @param mixed $id  The ID of the desired model.
