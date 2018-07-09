@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Repositories;
+namespace GuillermoandraeTest\Repositories;
 
 use PHPUnit\Framework\TestCase;
 use Guillermoandrae\Repositories\ReadOnlyRepositoryTrait;

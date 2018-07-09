@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Repositories;
+namespace GuillermoandraeTest\Repositories;
 
 use Guillermoandrae\Common\Collection;
 use Guillermoandrae\Models\AbstractModel;

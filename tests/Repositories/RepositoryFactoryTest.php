@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Repositories;
+namespace GuillermoandraeTest\Repositories;
 
 use Guillermoandrae\Repositories\AbstractRepository;
 use Guillermoandrae\Repositories\RepositoryFactory;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Models;
+namespace GuillermoandraeTest\Models;
 
 use Guillermoandrae\Models\AbstractModel;
 use PHPUnit\Framework\TestCase;
