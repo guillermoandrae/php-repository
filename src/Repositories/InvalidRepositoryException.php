@@ -2,6 +2,8 @@
 
 namespace Guillermoandrae\Repositories;
 
-class InvalidRepositoryException extends \ErrorException
+use ErrorException;
+
+class InvalidRepositoryException extends ErrorException
 {
 }

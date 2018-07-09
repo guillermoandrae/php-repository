@@ -2,6 +2,8 @@
 
 namespace Guillermoandrae\Models;
 
-class InvalidModelException extends \ErrorException
+use ErrorException;
+
+class InvalidModelException extends ErrorException
 {
 }
