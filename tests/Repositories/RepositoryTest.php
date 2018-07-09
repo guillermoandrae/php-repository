@@ -26,25 +26,6 @@ class RepositoryTest extends TestCase
         $this->assertSame($model, $this->repository->findById($id));
     }
 
-
-    public function testCreate()
-    {
-        $this->expectExceptionMessage('The create method of this repository is not supported.');
-        $this->repository->create([]);
-    }
-
-    public function testUpdate()
-    {
-        $this->expectExceptionMessage('The update method of this repository is not supported.');
-        $this->repository->update('1', []);
-    }
-
-    public function testDelete()
-    {
-        $this->expectExceptionMessage('The delete method of this repository is not supported.');
-        $this->repository->delete('1');
-    }
-
     protected function setUp()
     {
         $this->repository = $this->getMockForAbstractClass(AbstractRepository::class);
