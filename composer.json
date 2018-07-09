@@ -1,6 +1,7 @@
 {
     "name": "guillermoandrae/php-repository",
     "type": "library",
+    "description": "A PHP library that implements the Repository pattern.",
     "license": "MIT",
     "require": {
         "php": "^7.1",
