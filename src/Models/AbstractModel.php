@@ -19,7 +19,7 @@ abstract class AbstractModel implements ModelInterface
      *
      * @param [type] $data
      */
-    public function __construct($data)
+    public function __construct($data = null)
     {
         if (is_array($data)) {
             foreach ($data as $key => $value) {
