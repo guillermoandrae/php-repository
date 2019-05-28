@@ -3,8 +3,9 @@
 namespace Guillermoandrae\Models;
 
 use Guillermoandrae\Common\DumpableTrait;
+use Guillermoandrae\Common\AbstractAggregate;
 
-abstract class AbstractModel implements ModelInterface
+abstract class AbstractModel extends AbstractAggregate implements ModelInterface
 {
     use DumpableTrait;
 
