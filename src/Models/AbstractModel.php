@@ -28,8 +28,37 @@ abstract class AbstractModel implements ModelInterface
         }
     }
 
+    final public function offsetExists($offset)
+    {
+        return isset($this->data[$offset]);
+    }
+
+    final public function offsetGet($offset)
+    {
+        return $this->offsetExists($offset) ? $this->data[$offset] : null;
+    }
+
+    final public function offsetSet($offset, $value)
+    {
+        if (is_null($offset)) {
+            $this->data[] = $value;
+        } else {
+            $this->data[$offset] = $value;
+        }
+    }
+
+    final public function offsetUnset($offset)
+    {
+        unset($this->data[$offset]);
+    }
+
     final public function toJson(): string
     {
         return json_encode($this->toArray());
+    }
+
+    public function toArray(): array
+    {
+        return $this->data;
     }
 }
