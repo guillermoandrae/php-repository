@@ -37,7 +37,7 @@ class RepositoryTest extends TestCase
         $this->assertSame($this->repository->find($id), $this->repository->findById($id));
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->repository = $this->getMockForAbstractClass(AbstractRepository::class);
     }

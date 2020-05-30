@@ -30,7 +30,7 @@ class ReadOnlyRepositoryTraitTest extends TestCase
         $this->repository->delete('test');
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->repository = $this->getMockForTrait(ReadOnlyRepositoryTrait::class);
     }
