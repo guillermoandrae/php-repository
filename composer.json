@@ -4,8 +4,8 @@
     "description": "A PHP library that implements the Repository pattern.",
     "license": "MIT",
     "require": {
-        "php": "^7.1",
-        "icanboogie/inflector": "^1.4",
+        "php": "^7.2",
+        "icanboogie/inflector": "^1.5",
         "guillermoandrae/php-collection": "^0.2"
     },
     "autoload": {
@@ -14,8 +14,8 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.1",
-        "squizlabs/php_codesniffer": "^3.2",
+        "phpunit/phpunit": "8.*",
+        "squizlabs/php_codesniffer": "^3.4",
         "guillermoandrae/php-debug": "^0.1.0"
     },
     "autoload-dev": {
