@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7167326f9af1d7a76307dfc2168342c0",
+    "content-hash": "5970d7747f553730a63d7c6e48a69f3f",
     "packages": [
         {
             "name": "guillermoandrae/php-collection",
-            "version": "0.2.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guillermoandrae/php-collection.git",
-                "reference": "926cb5a1fba7fc9ac20e8031b48b9bc1b61c87ee"
+                "reference": "9531a5880f3675f7fad3fa9560878ec3ca2eb7d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guillermoandrae/php-collection/zipball/926cb5a1fba7fc9ac20e8031b48b9bc1b61c87ee",
-                "reference": "926cb5a1fba7fc9ac20e8031b48b9bc1b61c87ee",
+                "url": "https://api.github.com/repos/guillermoandrae/php-collection/zipball/9531a5880f3675f7fad3fa9560878ec3ca2eb7d9",
+                "reference": "9531a5880f3675f7fad3fa9560878ec3ca2eb7d9",
                 "shasum": ""
             },
             "require": {
-                "guillermoandrae/php-debug": "^0.1.0",
-                "php": "^7.1"
+                "guillermoandrae/php-debug": "1.*",
+                "php": "^7.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^7.1",
@@ -47,29 +47,29 @@
                     "email": "me@guillermoandraefisher.com"
                 }
             ],
-            "description": " PHP Collection Library",
-            "time": "2019-07-07T02:00:59+00:00"
+            "description": "A PHP Collection Library",
+            "time": "2020-05-31T00:49:59+00:00"
         },
         {
             "name": "guillermoandrae/php-debug",
-            "version": "0.1.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guillermoandrae/php-debug.git",
-                "reference": "0099f4bc8091f760203478e102db6316eb48a4c8"
+                "reference": "719760afc22a095ffd7e53142c47dcd4a6fc5d63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guillermoandrae/php-debug/zipball/0099f4bc8091f760203478e102db6316eb48a4c8",
-                "reference": "0099f4bc8091f760203478e102db6316eb48a4c8",
+                "url": "https://api.github.com/repos/guillermoandrae/php-debug/zipball/719760afc22a095ffd7e53142c47dcd4a6fc5d63",
+                "reference": "719760afc22a095ffd7e53142c47dcd4a6fc5d63",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.1",
-                "squizlabs/php_codesniffer": "^3.2"
+                "phpunit/phpunit": "^8.1",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "autoload": {
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "PHP Debug library",
-            "time": "2018-06-04T02:32:48+00:00"
+            "time": "2020-05-31T00:30:58+00:00"
         },
         {
             "name": "icanboogie/inflector",
