@@ -6,7 +6,7 @@
     "require": {
         "php": "^7.2",
         "icanboogie/inflector": "^1.5",
-        "guillermoandrae/php-collection": "*"
+        "guillermoandrae/php-collection": "1.*"
     },
     "autoload": {
         "psr-4": {
