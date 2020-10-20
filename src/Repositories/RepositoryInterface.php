@@ -8,19 +8,12 @@ use Guillermoandrae\Models\ModelInterface;
 interface RepositoryInterface
 {
     /**
-     * @see RepositoryInterface::findById()
-     * @param mixed $id  The ID of the desired model.
-     * @return ModelInterface|null
-     */
-    public function find($id): ?ModelInterface;
-
-    /**
-     * Returns the model with the provided ID.
+     * Returns the model with the provided primary key.
      *
-     * @param mixed $id  The ID of the desired model.
+     * @param mixed $primaryKey  The primary key of the desired model.
      * @return ModelInterface|null
      */
-    public function findById($id): ?ModelInterface;
+    public function find($primaryKey): ?ModelInterface;
 
     /**
      * Returns a collection of models within the provided range.
@@ -51,20 +44,20 @@ interface RepositoryInterface
     public function create(array $data): ?ModelInterface;
 
     /**
-     * Updates the model associated with the provided ID using the provided
-     * data. Returns the updated model.
+     * Updates the model associated with the provided primary key using the
+     * provided data. Returns the updated model.
      *
-     * @param mixed $id  The ID of the desired model.
+     * @param mixed $primaryKey  The primary key of the desired model.
      * @param array $data  The data to use when updating the model.
      * @return ModelInterface|null
      */
-    public function update($id, array $data): ?ModelInterface;
+    public function update($primaryKey, array $data): ?ModelInterface;
 
     /**
-     * Deletes the model associated with the provided ID.
+     * Deletes the model associated with the provided primary key.
      *
-     * @param mixed $id  The ID of the desired model.
+     * @param mixed $primaryKey  The ID of the desired model.
      * @return bool
      */
-    public function delete($id): bool;
+    public function delete($primaryKey): bool;
 }

@@ -15,17 +15,6 @@ class RepositoryTest extends TestCase
      */
     private $repository;
 
-    public function testFindById()
-    {
-        $id = 1;
-        $model = $this->getMockForAbstractClass(AbstractModel::class);
-        $this->repository->expects($this->once())
-            ->method('findWhere')
-            ->with($this->equalTo(['id' => $id]))
-            ->willReturn(new Collection([$model]));
-        $this->assertSame($model, $this->repository->findById($id));
-    }
-
     public function testFind()
     {
         $id = 1;
@@ -34,7 +23,6 @@ class RepositoryTest extends TestCase
             ->method('findWhere')
             ->with($this->equalTo(['id' => $id]))
             ->willReturn(new Collection([$model]));
-        $this->assertSame($this->repository->find($id), $this->repository->findById($id));
     }
 
     protected function setUp(): void
