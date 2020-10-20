@@ -16,12 +16,12 @@ abstract class AbstractRepository implements RepositoryInterface
         $this->options = $options;
     }
 
-    public function find($id): ModelInterface
+    public function find($id): ?ModelInterface
     {
         return $this->findById($id);
     }
 
-    public function findById($id): ModelInterface
+    public function findById($id): ?ModelInterface
     {
         $collection = $this->findWhere(['id' => $id]);
         return $collection->first();

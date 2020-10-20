@@ -10,26 +10,26 @@ interface RepositoryInterface
     /**
      * @see RepositoryInterface::findById()
      * @param mixed $id  The ID of the desired model.
-     * @return ModelInterface
+     * @return ModelInterface|null
      */
-    public function find($id): ModelInterface;
+    public function find($id): ?ModelInterface;
 
     /**
      * Returns the model with the provided ID.
      *
      * @param mixed $id  The ID of the desired model.
-     * @return ModelInterface
+     * @return ModelInterface|null
      */
-    public function findById($id): ModelInterface;
+    public function findById($id): ?ModelInterface;
 
     /**
      * Returns a collection of models within the provided range.
      *
      * @param int $offset  The desired offset.
      * @param int|null $limit  The desired limit.
-     * @return CollectionInterface
+     * @return CollectionInterface|null
      */
-    public function findAll(int $offset = 0, int $limit = null): CollectionInterface;
+    public function findAll(int $offset = 0, int $limit = null): ?CollectionInterface;
 
     /**
      * Returns a collection of models that meet the provided criteria within
@@ -38,17 +38,17 @@ interface RepositoryInterface
      * @param array $where  The selection criteria.
      * @param int $offset  The desired offset.
      * @param int|null $limit  The desired limit.
-     * @return CollectionInterface
+     * @return CollectionInterface|null
      */
-    public function findWhere(array $where, int $offset = 0, int $limit = null): CollectionInterface;
+    public function findWhere(array $where, int $offset = 0, int $limit = null): ?CollectionInterface;
 
     /**
      * Creates a model using the provided data and returns that model.
      *
      * @param array $data  The data to use when creating the model.
-     * @return ModelInterface
+     * @return ModelInterface|null
      */
-    public function create(array $data): ModelInterface;
+    public function create(array $data): ?ModelInterface;
 
     /**
      * Updates the model associated with the provided ID using the provided
@@ -56,9 +56,9 @@ interface RepositoryInterface
      *
      * @param mixed $id  The ID of the desired model.
      * @param array $data  The data to use when updating the model.
-     * @return ModelInterface
+     * @return ModelInterface|null
      */
-    public function update($id, array $data): ModelInterface;
+    public function update($id, array $data): ?ModelInterface;
 
     /**
      * Deletes the model associated with the provided ID.
