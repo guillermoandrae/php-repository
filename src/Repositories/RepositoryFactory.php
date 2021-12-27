@@ -7,16 +7,16 @@ final class RepositoryFactory
     /**
      * The namespace to use when creating repository objects.
      *
-     * @var string
+     * @var string|null
      */
-    private static $namespace;
+    private static ?string $namespace = '';
 
     /**
      * The default namespace to use when creating repository objects.
      *
      * @var string
      */
-    private static $defaultNamespace = 'App\Repositories';
+    private static string $defaultNamespace = 'App\Repositories';
 
     /**
      * Sets the namespace to use when creating repository objects.
@@ -50,7 +50,7 @@ final class RepositoryFactory
      * @throws InvalidRepositoryException  Thrown when an invalid repository is
      *                                     requested.
      */
-    public static function factory(string $name, $options = null): RepositoryInterface
+    public static function factory(string $name, mixed $options = null): RepositoryInterface
     {
         try {
             $className = sprintf(

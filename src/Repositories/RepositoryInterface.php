@@ -13,7 +13,7 @@ interface RepositoryInterface
      * @param mixed $primaryKey  The primary key of the desired model.
      * @return ModelInterface|null
      */
-    public function find($primaryKey): ?ModelInterface;
+    public function find(mixed $primaryKey): ?ModelInterface;
 
     /**
      * Returns a collection of models within the provided range.
@@ -51,7 +51,7 @@ interface RepositoryInterface
      * @param array $data  The data to use when updating the model.
      * @return ModelInterface|null
      */
-    public function update($primaryKey, array $data): ?ModelInterface;
+    public function update(mixed $primaryKey, array $data): ?ModelInterface;
 
     /**
      * Deletes the model associated with the provided primary key.
@@ -59,5 +59,5 @@ interface RepositoryInterface
      * @param mixed $primaryKey  The ID of the desired model.
      * @return bool
      */
-    public function delete($primaryKey): bool;
+    public function delete(mixed $primaryKey): bool;
 }

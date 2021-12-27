@@ -12,7 +12,7 @@ abstract class AbstractModel implements ModelInterface
     /**
      * @var array
      */
-    protected $data = [];
+    protected array $data = [];
 
     /**
      * Undocumented function
@@ -28,17 +28,17 @@ abstract class AbstractModel implements ModelInterface
         }
     }
 
-    final public function offsetExists($offset)
+    final public function offsetExists($offset): bool
     {
         return isset($this->data[$offset]);
     }
 
-    final public function offsetGet($offset)
+    final public function offsetGet($offset): mixed
     {
         return $this->offsetExists($offset) ? $this->data[$offset] : null;
     }
 
-    final public function offsetSet($offset, $value)
+    final public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->data[] = $value;
@@ -47,7 +47,7 @@ abstract class AbstractModel implements ModelInterface
         }
     }
 
-    final public function offsetUnset($offset)
+    final public function offsetUnset($offset): void
     {
         unset($this->data[$offset]);
     }

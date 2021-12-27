@@ -13,7 +13,7 @@ abstract class AbstractRepository implements RepositoryInterface
      *
      * @var mixed|null
      */
-    protected $options;
+    protected mixed $options;
 
     /**
      * Constructor. Provides the ability to inject dependencies using the RepositoryFactory.
@@ -21,7 +21,7 @@ abstract class AbstractRepository implements RepositoryInterface
      * @see RepositoryFactory
      * @param mixed|null $options  The repository options.
      */
-    public function __construct($options = null)
+    public function __construct(mixed $options = null)
     {
         $this->options = $options;
     }
