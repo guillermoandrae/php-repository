@@ -15,11 +15,11 @@ abstract class AbstractModel implements ModelInterface
     protected array $data = [];
 
     /**
-     * Undocumented function
+     * Constructor.
      *
-     * @param [type] $data
+     * @param mixed $data
      */
-    public function __construct($data = null)
+    public function __construct(mixed $data = null)
     {
         if (is_array($data)) {
             foreach ($data as $key => $value) {
@@ -28,17 +28,17 @@ abstract class AbstractModel implements ModelInterface
         }
     }
 
-    final public function offsetExists($offset): bool
+    final public function offsetExists(mixed $offset): bool
     {
         return isset($this->data[$offset]);
     }
 
-    final public function offsetGet($offset): mixed
+    final public function offsetGet(mixed $offset): mixed
     {
         return $this->offsetExists($offset) ? $this->data[$offset] : null;
     }
 
-    final public function offsetSet($offset, $value): void
+    final public function offsetSet(mixed $offset, mixed $value): void
     {
         if (is_null($offset)) {
             $this->data[] = $value;
@@ -47,7 +47,7 @@ abstract class AbstractModel implements ModelInterface
         }
     }
 
-    final public function offsetUnset($offset): void
+    final public function offsetUnset(mixed $offset): void
     {
         unset($this->data[$offset]);
     }

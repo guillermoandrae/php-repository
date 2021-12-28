@@ -45,7 +45,7 @@ final class RepositoryFactory
      * Returns the desired repository using the provided data.
      *
      * @param string $name The name of the desired repository.
-     * @param mixed|null $options The data needed to build the repository.
+     * @param mixed $options The data needed to build the repository.
      * @return RepositoryInterface
      * @throws InvalidRepositoryException  Thrown when an invalid repository is
      *                                     requested.

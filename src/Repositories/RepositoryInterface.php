@@ -22,7 +22,7 @@ interface RepositoryInterface
      * @param int|null $limit  The desired limit.
      * @return CollectionInterface|null
      */
-    public function findAll(int $offset = 0, int $limit = null): ?CollectionInterface;
+    public function findAll(int $offset = 0, ?int $limit = null): ?CollectionInterface;
 
     /**
      * Returns a collection of models that meet the provided criteria within
@@ -33,7 +33,7 @@ interface RepositoryInterface
      * @param int|null $limit  The desired limit.
      * @return CollectionInterface|null
      */
-    public function findWhere(array $where, int $offset = 0, int $limit = null): ?CollectionInterface;
+    public function findWhere(array $where, int $offset = 0, ?int $limit = null): ?CollectionInterface;
 
     /**
      * Creates a model using the provided data and returns that model.
