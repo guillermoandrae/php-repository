@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "icanboogie/inflector": "^1.5",
+        "icanboogie/inflector": "^2.0",
         "guillermoandrae/php-collection": "^2.0"
     },
     "autoload": {

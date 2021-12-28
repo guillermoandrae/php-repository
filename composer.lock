@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d08d332bb7f5603b689374e299f98f37",
+    "content-hash": "4a8437b4b33f7b6cecbcc13f45f906a3",
     "packages": [
         {
             "name": "guillermoandrae/php-collection",
@@ -103,27 +103,35 @@
         },
         {
             "name": "icanboogie/inflector",
-            "version": "v1.5.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ICanBoogie/Inflector.git",
-                "reference": "fb6ca7977f8a7ebb46aff0183ee868d798f77ab8"
+                "reference": "bd9173bf1a267f0a89a04d8a66c486bca1f13230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ICanBoogie/Inflector/zipball/fb6ca7977f8a7ebb46aff0183ee868d798f77ab8",
-                "reference": "fb6ca7977f8a7ebb46aff0183ee868d798f77ab8",
+                "url": "https://api.github.com/repos/ICanBoogie/Inflector/zipball/bd9173bf1a267f0a89a04d8a66c486bca1f13230",
+                "reference": "bd9173bf1a267f0a89a04d8a66c486bca1f13230",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3.4"
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "icanboogie/common": "<2.0"
+            },
+            "require-dev": {
+                "icanboogie/common": "^2.0",
+                "phpstan/phpstan": "^0.12.92",
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "lib/"
-                ],
+                "psr-4": {
+                    "ICanBoogie\\": "lib/"
+                },
                 "files": [
                     "lib/helpers.php"
                 ]
@@ -155,7 +163,7 @@
                 "issues": "https://github.com/ICanBoogie/Inflector/issues",
                 "source": "https://github.com/ICanBoogie/Inflector"
             },
-            "time": "2019-05-21T19:05:31+00:00"
+            "time": "2021-10-20T02:15:30+00:00"
         }
     ],
     "packages-dev": [
